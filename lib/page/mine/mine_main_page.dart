@@ -138,11 +138,11 @@ class MineMainPage extends StatelessWidget {
             crossAxisSpacing: 10.w,
           ),
           itemBuilder: (BuildContext context, int index) {
-            return MineIcos(
+            return MineIcon(
               onTaps: (){
                 debugPrint('功能${index+1}');
               },
-              icons: Icon(IconValue.mine),
+              icon: Icon(IconValue.mine),
               lable:'功能${index+1}',
             );
           },
@@ -153,19 +153,19 @@ class MineMainPage extends StatelessWidget {
   }
 }
 
-class MineIcos extends StatelessWidget {
-  final icons;
+class MineIcon extends StatelessWidget {
+  final icon;
   final lable;
   Function onTaps;
 
-  MineIcos({Key? key, required this.icons,this.lable, required this.onTaps}) : super(key: key);
+  MineIcon({Key? key, required this.icon,this.lable, required this.onTaps}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child:  Column(
         children: [
-          icons,
+          icon,
           Container(
             child: Text('$lable',style: TextStyle(color: ColorValues.textColor[700],fontSize: 12.sp),),
             margin: EdgeInsets.only(top: 5.h),

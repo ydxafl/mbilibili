@@ -29,11 +29,11 @@ class Live extends StatelessWidget {
               childAspectRatio:563/450,
             ),
             itemBuilder: (BuildContext context, int index) {
-              return LiveIcos(
+              return LiveIcon(
                 onTaps: (){
                   debugPrint('功能${index+1}');
                 },
-                icons:Icon(IconValue.mine),
+                icon:Icon(IconValue.mine),
                 lable:'功能${index+1}',
               );
             },
@@ -70,19 +70,19 @@ class Live extends StatelessWidget {
 }
 
 
-class LiveIcos extends StatelessWidget {
-  final icons;
+class LiveIcon extends StatelessWidget {
+  final icon;
   final lable;
   Function onTaps;
 
-  LiveIcos({Key? key, required this.icons,this.lable, required this.onTaps}) : super(key: key);
+  LiveIcon({Key? key, required this.icon,this.lable, required this.onTaps}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child:  Column(
         children: [
-          icons,
+          icon,
           Container(
             child: Text('$lable',style: TextStyle(color: ColorValues.textColor[700],fontSize: 12.sp),),
             margin: EdgeInsets.only(top: 5.h),
