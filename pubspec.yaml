@@ -13,22 +13,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.4
 
 
-  get: ^4.3.4  # 路由和状态管理     https://pub.flutter-io.cn/packages/get
+  get: ^4.6.1  # 路由和状态管理     https://pub.flutter-io.cn/packages/get
 
-  flutter_screenutil: ^5.0.0+2  # 屏幕适配    https://pub.flutter-io.cn/packages/flutter_screenutil
+  flutter_screenutil: ^5.2.0  # 屏幕适配    https://pub.flutter-io.cn/packages/flutter_screenutil
 
-  #shared_preferences: ^2.0.6  # sp缓存    https://pub.flutter-io.cn/packages/shared_preferences
+  #shared_preferences: ^2.0.13  # sp缓存    https://pub.flutter-io.cn/packages/shared_preferences
 
-  #image_picker: ^0.8.3+1  # 图片   https://pub.flutter-io.cn/packages/image_picker
+  #image_picker: ^0.8.4+8  # 图片   https://pub.flutter-io.cn/packages/image_picker
 
-  #permission_handler: ^8.1.4+2  # 权限    https://pub.flutter-io.cn/packages/permission_handler
+  #permission_handler: ^8.3.0  # 权限    https://pub.flutter-io.cn/packages/permission_handler
 
   #dio: ^4.0.0  # 网络请求    https://pub.flutter-io.cn/packages/dio
 
-  flutter_staggered_grid_view: ^0.6.0 # 瀑布流  https://pub.flutter-io.cn/packages/flutter_staggered_grid_view
+  flutter_staggered_grid_view: ^0.6.1 # 瀑布流  https://pub.flutter-io.cn/packages/flutter_staggered_grid_view
 
   fluttertoast: ^8.0.8 # 吐司  https://pub.flutter-io.cn/packages/fluttertoast
 
